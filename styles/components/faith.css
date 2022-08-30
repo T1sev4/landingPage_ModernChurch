@@ -1,0 +1,89 @@
+.faith{
+    background: url(../../images/faith-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 140px 0;
+}
+.faith-inner{
+    display: flex;
+    justify-content: center;
+}
+
+.left-faith{
+    width: 35%;
+}
+.right-faith{
+    width: 55%;
+}
+.right-faith p{
+    font-family: 'Kaushan Script', cursive;
+    color: #10c1af;
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.faith-span{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+.faith-block{
+    margin-top: 50px;
+}
+.accordion-faith{
+    width: 100%;
+    padding: 16px 20px;
+    background-color: #22314c;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-left: 5px solid #10c1af;
+    transition: 0.4s;
+}
+.panel{
+    padding: 0px 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+.panel p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+}
+.panelBtnFaith{
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #10c1af;
+    border: solid #10c1af 2.5px;
+    padding: 12px 35px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+.panel-content-faith{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.panel-content-faith img{
+    margin-right: 20px;
+    height: 100%;
+}
+.accordion-faith i{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.panelBtnFaith:hover{
+    background-color: #fff;
+    color: black;
+    transition: .3s;
+}
+

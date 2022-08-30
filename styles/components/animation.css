@@ -1,0 +1,25 @@
+.about-inner{
+    animation-name: change;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+
+}
+.connecting-inner{
+    animation-name: change;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+}
+
+@keyframes change{
+    from{
+        transform: translate(-800px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+
+.donate-item img:hover{
+    transform: scale(1.1);
+    transition-duration: .3s;
+}

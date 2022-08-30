@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProject</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+<body>
+    <section class="home">
+        <div class="Header">
+            <div class="head-lt">
+                <div class="head-logo">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <img src="images/logo.png" alt="">
+                </div>
+
+                <div class="head-text">
+                    <a href="">Modern</a>
+                    <a href="" class="head-text_2">Church</a>
+                </div>  
+            </div>
+
+            <div class="head-menu">
+                <a href="#about-sec">About</a>
+                <a href="#event-sec">Events</a>
+                <a href="#sermon-sec">Sermons</a>
+                <a href="">All Blocks </a>
+            </div>
+            
+        </div>
+
+        <div class="home-inner container">
+            <h1>Welcome to Modern Church</h1>
+            <p>Be happy for this moment</p>
+            <p>This moment <em>is</em> your life</p>
+        </div>
+    
+    </section>
+    <section class="study">
+        <div class="study-inner container">
+            <div class="study-text">
+                <h2>Bible study</h2>
+                <p>
+                    At this group (adults ages 50+), 
+                    we meet to enjoy relationships, have a Bible study, and do a variety of other activities.
+                </p>
+            </div>
+            <div class="study-timer">
+                <div class="stimer-item">
+
+                    <p class="stimer-number timer-days">0</p>
+                    <p>Days</p>
+
+                </div>
+
+                <div class="stimer-item">
+
+                    <p class="stimer-number timer-hours">0</p>
+                    <p>Hours</p>
+
+                </div>
+                <div class="stimer-item">
+
+                    <p class="stimer-number timer-minutes">0</p>
+                    <p>Minutes</p>
+
+                </div>
+
+                <div class="stimer-item">
+
+                    <p class="stimer-number timer-seconds">0</p>
+                    <p>Seconds</p>
+
+                </div>
+
+            </div>
+
+            <div class="study-button">
+                <button onclick="openStudy()">Event Details</button>
+            </div>
+
+        </div>
+
+        <div class="modalStudy">
+            <div class="modalContentStudy">
+                <button onclick="closeStudy()" class="closeButton"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <p>We Can Call You In 30 Seconds, Just Enter Your Number Below</p>
+                <h2>Request a Callback</h2>
+                <form action="">
+                    <input type="text" placeholder="Name *" required>
+                    <input type="text" placeholder="E-mail *" required>
+                    <textarea placeholder="Message *"></textarea>
+                    <button> Request </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <p><a name = "about-sec"></a></p>
+    <section class="about">
+        <div class="about-inner container">
+
+            <div class="about-left">
+                <p class="about-w">Welcome</p>
+                <h2>About Our Church</h2>
+                <p>
+                    At Modern Church, you won't be met with shame, guilt, or condemnation. 
+                    No matter what you’ve been through or what questions you might have, 
+                    our church is a place where you'll find the grace, mercy, and forgiveness Jesus gives to everyone.
+                </p>
+                <p>Come and be part of our family this Sunday.</p>
+                <div class="about-wov">
+                    <a onclick="openAbout()">watch video</a>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="about-right">
+                <div class="about-bg" onclick="openAbout()">
+                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div> 
+
+        <div class="modalAbout">
+            <div class="modalContentAbout">
+                <button onclick="closeAbout()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aIsJAZwT9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="faith">
+        <div class="faith-inner container">
+           
+            <div class="left-faith"></div>
+
+
+            <div class="right-faith">
+                <p>Our Statement</p>
+                <span class="faith-span">Statement of Faith</span>
+                <div class="faith-block">
+
+                    <button class="accordion-faith">The Trinity <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    <div class="panel">
+                        <div class="panel-content-faith">
+                            <img src="images/heart-faith.png" alt="">
+                            <p>It is the testimony of both the Old and New Testaments and of the Christian Church that God is both One and Triune.</p>
+                        </div>
+                        <p>The biblical revelation testifies that there is only one God and that He is eternally existent in three persons—Father, Son, and Holy Spirit.</p>
+                        <button class="panelBtnFaith" onclick="openStudy()">View More</button>
+                    </div>
+
+                    <button class="accordion-faith">The Scripture <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                        <div class="panel">
+                            <p>We affirm that the Bible, containing the Old and New Testaments, is alone the only infallible, inspired Word of God and that its authority is ultimate, final, and eternal. It cannot be added to, subtracted from, or superseded in any regard. The Bible is the source of all doctrine, instruction, correction, and reproof. It contains all that is needed for guidance in godliness and practical Christian conduct.</p>
+                            <button class="panelBtnFaith" onclick="openStudy()">View More</button>
+                        </div>
+
+                     <button class="accordion-faith">Salvation <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                     <div class="panel">
+                        <p>The Word of God declares clearly that salvation is a free gift of God, based on the merits of the death of His Son, and is appropriated by faith. Salvation is affected by personal repentance, belief in the Lord Jesus (justification), and personal acceptance of Him into one’s life as Lord and Savior (regeneration).</p>
+                        <p>
+                            The new life in Christ includes the privileges of adoption and inheritance in the kingdom of God’s beloved Son. Salvation is an act of free will in response to God’s personal love for mankind. It is predestined only in the sense that God, through His omniscience, foreknew those who would choose Him. It is secure in the eternal, unchanging commitment of God who does not lie and is forever the same. Salvation should produce an active lifestyle of loving obedience and service to Jesus Christ our Savior.
+                        </p>
+                        <button class="panelBtnFaith" onclick="openStudy()">View More</button>
+                    </div>
+                    
+
+                    <div class="modalStudy">
+                        <div class="modalContentStudy">
+                            <button onclick="closeStudy()" class="closeButton"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <p>We Can Call You In 30 Seconds, Just Enter Your Number Below</p>
+                            <h2>Request a Callback</h2>
+                            <form action="">
+                                <input type="text" placeholder="Name *" required>
+                                <input type="text" placeholder="E-mail *" required>
+                                <textarea placeholder="Message *"></textarea>
+                                <button> Request </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>  
+        </div>
+
+    </section>
+
+    <section class="solution section-padding">
+        <div class="solution-inner container">
+            <p>Solution in 3 Easy Steps</p>
+            <h2>Here Is We Are struggling For</h2>
+            <div class="solution-block">
+                <div class="solution-item">
+                    <p>01.</p>
+                    <h3>Our Mission</h3>
+                    <span>
+                        Our mission is to help each person at Gateway believe in Jesus, belong to a family,
+                         become a follower, and build God's kingdom.
+                    </span>
+                </div>
+                <div class="solution-item">
+                    <p>02.</p>
+                    <h3>Our Vision</h3>
+                    <span>
+                        The church is more than a service on the weekend. 
+                        It’s about connecting with other people, growing in your faith.
+                    </span>
+                </div>
+                <div class="solution-item">
+                    <p>03.</p>
+                    <h3>Our Belief</h3>
+                    <span>
+                        We want every person to have a chance to experience what God has for them - whether it’s through serving or getting plugged.
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-top">
+            <div class="top-item">
+                <img src="images/gallery-1.jpg" alt="">
+                <div class="gal-bg" onclick="openGal(0)"></div>
+            </div>
+            <div class="top-item">
+                <img src="images/gallery-2.jpg" alt="" >
+                <div class="gal-bg" onclick="openGal(1)"></div>
+            </div>
+            <div class="top-item">
+                <img src="images/gallery-3.jpg" alt="" >
+                <div class="gal-bg" onclick="openGal(2)"></div>
+            </div>
+            <div class="top-item">
+                <img src="images/gallery-4.jpg" alt="" >
+                <div class="gal-bg" onclick="openGal(3)"></div>
+            </div>
+            <div class="top-item">
+                <img src="images/gallery-5.jpg" alt="" >
+                <div class="gal-bg" onclick="openGal(4)"></div>
+            </div>
+            <div class="top-item">
+                <img src="images/gallery-6.jpg" alt="" >
+                <div class="gal-bg" onclick="openGal(5)"></div>
+            </div>
+        </div>
+        <div class="gallery-bottom">
+            <div class="bottom-item">
+                <img src="images/gallery-7.jpg" alt="" >
+                <div class="gal-bg" onclick="openGal(6)"></div>
+            </div>
+            <div class="bottom-item">
+                <img src="images/gallery-8.jpg" alt="" >
+                <div class="gal-bg" onclick="openGal(7)"></div>
+            </div>
+        </div>
+
+
+        <div class="modal-window">
+            <div class="modal-content">
+                <button onclick="closeGal()"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <img class="modalImg" src="" alt="">
+                <a class="prev-btn" onclick="changeImg(-1)"><</a>
+                <a class="next-btn" onclick="changeImg(+1)">></a>
+                <div class="dots"></div>
+                <p class="gal-page"><span class="galPageChan">1</span>/8</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="pastors section-padding">
+        <div class="pastors-inner container">
+            <p>Lead Pastors</p>
+            <h2>Meet Our Pastors</h2>
+            <div class="pastors-block">
+                <div class="pastors-item">
+                    <img src="images/pastor-1.jpg" alt="">
+                    <a href="">Christopher Hayes</a>
+                    <p>Pastor of Culture</p>
+                    <div class="pastors-icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+                <div class="pastors-item">
+                    <img src="images/pastor-2.jpg" alt="">
+                    <a href="">Tom Neville</a>
+                    <p>Pastor of Ministries</p>
+                    <div class="pastors-icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="pastors-item">
+                    <img src="images/pastor-3.jpg" alt="">
+                    <a href="">Gary Truman</a>
+                    <p>Teaching Pastor</p>
+                    <div class="pastors-icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p><a name = "event-sec"></a></p>
+    <section class="story">
+        <div class="story-inner">
+            <div class="story-block">
+                <div class="story-item S-item-1">
+                    <div class="story-left">
+                        <p>24</p>
+                    </div>
+                    <div class="story-right">
+                        <h3> Sunday Gatherings </h3>
+                        <span>
+                            Whether it's your first time at church or you've gone to church for years, 
+                            our Sunday gatherings are a welcoming place for you to enjoy worshipping Jesus with others.
+                        </span>
+                    </div>
+                </div>
+                <div class="story-item S-item-2">
+                    <div class="story-left">
+                        <p>15</p>
+                    </div>
+                    <div class="story-right">
+                        <h3> KidSpring </h3>
+                        <span>
+                            Every Sunday, all children (babies through 5th grade) experience safe, 
+                            age-appropriate environments where the Bible is taught in a creative and relevant way.
+                        </span>
+                    </div>
+                </div>
+                <div class="story-item S-item-3">
+                    <div class="story-left">
+                        <p>27</p>
+                    </div>
+                    <div class="story-right">
+                        <h3>Fuse</h3>
+                        <span>
+                            Our ministry for 6th-12th graders gives students a fun place to connect with God and others,
+                            so they will lead the next generation of the church and change the world.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="connecting section-padding">
+        <div class="connecting-inner container">
+
+            <div class="connecting-left">
+                <p class="connecting-w">What We Do</p>
+                <h2>Connecting People to God</h2>
+                <span>
+                    Thank you for visiting Crestwood’s website! 
+                    You’re probably here because you’re wondering who we are, so let me tell you but first tell you who we are not.
+                </span>
+                <ul>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>We’re not the ones who “have all the answers.”</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>We’re not the ones we are trying to make everyone else come around to “our way of believing.”</li>
+                    <li><i class="fa fa-arrow-right" aria-hidden="true"></i>We’re not the ones will tell you all the things you’ve done wrong.</li>
+                </ul>
+                <div class="wov">
+                <a onclick="openAbout()">watch our video</a> 
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="connecting-right">
+                <img src="images/connecting-bg.jpg" alt="">
+            </div>
+
+        </div> 
+    </section>
+    <section class="line">
+
+        <div class="line-inner">
+        <p>Andrew Fisher, Deacon</p>
+        <i class="fa fa-play-circle" aria-hidden="true"></i>
+        </div>
+
+    </section>
+
+    <section class="donate section-padding">
+        <div class="donate-inner container">
+            <div class="donate-text">
+            <p>Donate</p>
+            <h2>Participate in Our Fundraising Projects</h2>
+            </div>
+
+            <div class="donate-block">
+                <div class="donate-item">
+                    <img src="images/donate-1.jpg" alt="">
+                    <span>Community Support</span>
+                    <p>We cooperate with religious organizations and raise money to support families or individuals in our local communities.</p>
+                    <button>Donate</button>
+                </div>
+
+                <div class="donate-item">
+                    <img src="images/donate-2.jpg" alt="">
+                    <span>Youth Groups Activities</span>
+                    <p>Youth groups are a great way for young people in a church or religious organization to get together and support each other.</p>
+                    <button>Donate</button>
+                </div>
+
+                <div class="donate-item">
+                    <img src="images/donate-3.jpg" alt="">
+                    <span>Mission Trips</span>
+                    <p>We are constantly organizing mission trips for our church groups and communities. You can donate to support them.</p>
+                    <button>Donate</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sponsors">
+        <div class="sponsors-text">
+            <p>Our Sponsors</p>
+            <h2>Organizations that Support Us</h2>
+        </div>
+        <div class="sponsors-block">
+            <div class="sponsors-item"><img src="images/sponsors-1.png" alt=""></div>
+            <div class="sponsors-item"> <img src="images/sponsors-2.png" alt=""></div>
+            <div class="sponsors-item"> <img src="images/sponsors-3.png" alt=""></div>
+            <div class="sponsors-item"> <img src="images/sponsors-1.png" alt=""></div>
+            <div class="sponsors-item"> <img src="images/sponsors-2.png" alt=""></div>
+            <div class="sponsors-item"> <img src="images/sponsors-3.png" alt=""></div>
+
+        </div>
+    </section>
+    
+    <p><a name = "sermon-sec"></a></p>
+
+    <section class="sermons section-padding">
+        <div class="sermons-inner container">
+            <div class="sermons-text">
+                <p>Sermons</p>
+                <h2>Come to Our Sermons and Get Inspired by the Speeches</h2>
+            </div>
+        </div>
+
+        <div class="sermons-block">
+            <div class="sermons-topics">
+                <button class="navs-btn active-sermons-btn">Holy Spirit</button>
+                <button class="navs-btn">Promised Land</button>
+                <button class="navs-btn">Tighten the Knot</button>
+            </div>
+            <div class="sermons-item active-sermons-item">
+                <div class="sermons-left">
+                    <img src="images/sermons-bg.jpg" alt="">
+                </div>
+                <div class="sermons-right">
+                    <span>4/7/18– 5/13/18</span>
+                    <p>
+                        The tomb is empty, and Jesus is alive. But it's common for many to forget the Holy Spirit is Jesus in us and with us.
+                    </p>
+                    <p>
+                        Who is Holy Spirit? What does He do? What are His gifts, and how do we experience Him? In this series, we remove the mystery that surrounds the third person of the Trinity. We are meant to know God the Holy Spirit as fully as we do God the Father and God the Son.
+                    </p>
+                    <a onclick="openSermons()">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="sermons-item ">
+                <div class="sermons-left">
+                    <img src="images/sermons-bg-2.jpg" alt="">
+                </div>
+                <div class="sermons-right">
+                    <span>8/20/17– 9/24/17</span>
+                    <p>
+                        You’ve heard it your whole life:
+                    </p>
+                    <ul>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Go to church.</li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Read the Bible.</li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i>Say your prayers.</li>
+                    </ul>
+                    <p>
+                        These are all good things. But Jesus didn’t come to give us a to-do list. Jesus came so we could experience a full, abundant life.
+                    </p>
+                    <a onclick="openSermons()">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="sermons-item">
+                <div class="sermons-left">
+                    <img src="images/sermons-bg-3.jpg" alt="">
+                </div>
+                <div class="sermons-right">
+                    <span>4/7/18– 5/13/18</span>
+                    <p>
+                        The tomb is empty, and Jesus is alive. But it's common for many to forget the Holy Spirit is Jesus in us and with us.
+                    </p>
+                    <p>
+                        Who is Holy Spirit? What does He do? What are His gifts, and how do we experience Him? In this series, we remove the mystery that surrounds the third person of the Trinity. We are meant to know God the Holy Spirit as fully as we do God the Father and God the Son.
+                    </p>
+                    <a onclick="openSermons()">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <div class="modalSermons">
+            <div class="modalContenSermons">
+                <button onclick="closeSermons()" class="closeButton"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <p>If You Have Any Questions Concerning Our Services, Please Fill Out the Contact Form Below.</p>
+                <h2>Contact Us</h2>
+                <form action="">
+                    <input type="text" placeholder="Name *" required>
+                    <input type="text" placeholder="E-mail *" required>
+                    <textarea placeholder="Message *"></textarea>
+                    <button> Submit </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="RGS section-padding">
+        <div class="RGS-inner container">
+            
+            <div class="RGS-text">
+                <p>Read, Get Inspired, and Share Your Story</p>
+                <h2><span>Testimonials</span></h2>
+            </div>
+        <div class="RGS-block">
+                <div class="RGS-item">
+                    <img src="images/RGS-icon.png" alt="">
+                    <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+                    <p>
+                        feel so blessed with this relationship that I have been developing with God. I have experienced sadness, loss, and heartache. I know what it is to be so sick that sometimes I could not even walk, and did not want to talk. I know what it is to feel low and depressed, and from the depths of my problems and despair I found myself asking God the question, “Why me?”. 
+                        My life has changed thanks to the Modern Church, here I found the community support and true faith.
+                    </p>
+                    
+                    <h3>Harry Simpson</h3>
+                    <p>One of happy customers</p>
+                </div>
+                <div class="RGS-item">
+                    <img src="images/RGS-icon-2.png" alt="">
+                    <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+                    <p>
+                        I was desperate to find the sense of life and came to the Modern Church. Now, I have learned to have faith in God and to call on his name through prayer and praise. He has been faithful to hear and answer when I call upon him. He has given me a joy in my heart so that, no matter what I am going through, my spirit remains bright; it remains happy, and it remains constant. God has been so good to me I cannot complain.
+                    </p>
+                    
+                    <h3>Melanie Jefferson</h3>
+                    <p>One of happy customers</p>
+                </div>  
+                <div class="RGS-item">
+                    <img src="images/RGS-icon-3.png" alt="">
+                    <span><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+                    <p>
+                       I am happy that I have found a place and a family, a Modern Church, where I can worship and learn about God’s love. I have learned that without Jesus in my life, I cannot be truly happy.  All the material things that I once thought I needed in my life to be happy, I no longer desire because God has filled me up with His grace and mercy and I thank Him, I praise Him. When I feel the pressure of this world, I now know how to ask God for perseverance and strength.
+                    </p>
+                    
+                    <h3>Sam Ronalds</h3>
+                    <p>One of happy customers</p>
+                </div>    
+            </div>
+        </div>  
+    </section>
+
+    <section class="FAQ section-padding">
+        <div class="FAQ-inner container">
+            <div class="FAQ-text">
+                <p>FAQ</p>
+                <h2>Questions Asked by Visitors</h2>
+            </div>
+            <div class="FAQ-block">
+        
+                <button class="accordion-FAQ">What time are your Sunday worship services and sermons? <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                <div class="panel-FAQ">
+                    <p>We have two worship services and sermons each Sunday, both held in the sanctuary.  Our 8:30 a.m. service is relaxed, featuring familiar hymns and piano accompaniment.</p>
+                    <hr>
+                    <p>Our 10:45 a.m. service includes a choir and a children’s time. Both services offer the celebration of communion every Sunday, and all believers are welcome to participate.</p>
+                </div>    
+                
+                <button class="accordion-FAQ">What do you offer for children on Saturday morning? <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                <div class="panel-FAQ">
+                    <p>
+                        Children are a special part of our congregation and we value them as full participants in the life of our church. Sunday School classes for children (preschool through the 12th grade) begin at 9:30 a.m. Following the Children’s Time in the 10:45 worship service, children ages 3 years old through second grade are dismissed to participate in their own time of singing, prayer and Bible learning known as Worship and Wonder (see below for more information on this program).
+                    </p>
+                </div> 
+
+                <button class="accordion-FAQ">Who goes to your church?<i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                <div class="panel-FAQ">
+                    <p>
+                        We have quite a mixture of people. Our congregation truly spans the ages, from newborns to folks in their 80s. You’ll find just about every type of person here – married, single, divorced, widowed – professionals, workers, retired – life-long residents and those who have just recently moved to the area. But even more important than the kind of people who go here is the kind of people who are welcome here – everyone!
+                    </p>
+                </div> 
+
+                <button class="accordion-FAQ">Do i have to belong to your denomination to attentd?<i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                <div class="panel-FAQ">
+                    <p>
+                        Not at all! In fact, many in our congregation come from a church background. We have many former Catholics, Lutherans, Presbyterians, and Methodists. We are a “patchwork” church – people with different church backgrounds “woven together” by God’s grace.
+                    </p>
+                </div> 
+                
+            </div>
+        </div>        
+    </section>
+
+    <section class="contact section-padding">
+        <div class="contact-inner container">
+            <h2>Contact Us</h2>
+            <div class="contact-block">
+                <div class="contact-item"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                <div class="contact-item"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                <div class="contact-item"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+                <div class="contact-item"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                <div class="contact-item"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+            </div>
+            <form action="" class="contact-input">
+            <input type="text" placeholder="Name *" required>
+            <input type="text" placeholder="E-mail *" required>
+            <textarea placeholder="Message *" class="input-3"></textarea>
+            <button> Send Message </button>
+            </form>
+            
+        </div>
+    </section>
+    
+    <section class="info section-padding"> 
+        <div class="info-inner container">
+            <div class="info-text">
+                <p>God has impacted many lives through Modern Church. Come to our sermons and join the community.</p>
+                <div class="info-block">
+                    <div class="info-item"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    <div class="info-item"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    <div class="info-item"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+                    <div class="info-item"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    <div class="info-item"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+                </div>
+            </div>
+
+            <div class="info-lt">
+                <div class="info-logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+
+                <div class="info-text">
+                    <a href="">Modern</a>
+                    <a href="" class="info-text_2">Church</a>
+                </div>  
+            </div>
+            <div class="info-contact">
+                <p><i class="fa fa-phone" aria-hidden="true"></i><a href="">1-800-1234-567</a></p>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i><a>4578 Marmora Road, Glasgow</a></p>
+                <p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="">contacts@demolink.com</a></p>
+                <p><a href="">info@demolink.com</a></p>
+            </div>
+            
+            
+        </div>
+        <div class="cop">
+            <hr>
+            <p class="copyright">© Copyright | Modern Church 2019. All Right Reserved.</p>
+        </div>    
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="logic/ModalWindow.js"></script>
+</body>
+</html>

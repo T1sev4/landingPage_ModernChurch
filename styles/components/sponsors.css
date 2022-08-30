@@ -1,0 +1,36 @@
+.sponsors{
+    background-color: #22314c;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sponsors-text{
+    text-align: center;
+}
+.sponsors-text p{
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'Kaushan Script', handwriting;
+    color: #10c1af;
+    margin-bottom: 20px;
+}
+.sponsors-text h2{
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.sponsors-block{
+    width: 70%;
+}
+.sponsors-item{
+    margin: 30px;
+}
+.sponsors-item img{
+    height: 100%;
+    width: 100%;
+}
+

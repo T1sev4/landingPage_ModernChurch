@@ -1,0 +1,20 @@
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.section-padding{
+    padding: 70px 0;
+}
+.closeButton{
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+.closeButton i{
+    color: rgb(147, 146, 146);
+}
+.closeButton i:hover{
+    color: #fff;
+    transition: .3s;
+}

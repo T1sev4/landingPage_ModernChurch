@@ -1,0 +1,45 @@
+.story-block{
+    display: flex;
+}
+.story-item{
+    display: flex;
+    background-color: #22314c;
+    padding: 40px 50px;
+    width: 30%;
+}
+.story-left{
+    font-size: 40px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: #fff;
+   
+}
+.story-left p{
+    font-family: 'Kaushan Script', cursive;
+}
+.story-right{
+    margin-left: 10px;
+    color: #fff;
+}
+.story-right h3{
+    font-size: 28px;
+    line-height: 1.2px;
+    margin: 20px 5px 30px;
+}
+.story-right span{
+    font-size: 17px;
+    line-height: 1.5;
+
+}
+.S-item-1{
+    background-image: url(../../images/story-bg-1.jpg);
+    background-size: cover;
+}
+.S-item-2{
+    background-image: url(../../images/story-bg-2.jpg);
+    background-size: cover;
+}
+.S-item-3{
+    background-image: url(../../images/story-bg-3.jpg);
+    background-size: cover;
+}

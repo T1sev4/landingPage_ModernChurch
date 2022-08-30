@@ -1,0 +1,132 @@
+.gallery-top, .gallery-bottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-item{
+    width: 33%;
+    position: relative;
+}
+.top-item img, .bottom-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-item{
+    width: 50%;
+    position: relative;
+}
+
+.gal-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22314c;
+    opacity: 0;
+}
+.gal-bg:hover{
+    opacity: 0.8;
+    transition: .3s;
+}
+
+/* -------------------- */
+
+.modal-window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    width: 700px;
+    height: 500px;
+    position: relative;
+}
+.modal-content button{
+    position: absolute;
+    background: none;
+    border: none;
+    top: -30px;
+    right: -5px;
+    z-index: 2;
+    font-size: 20px;
+    color: grey;
+}
+.modal-content button i{
+    color: rgb(147, 146, 146);
+}
+.modal-content img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.active{
+    display: flex;
+}
+
+.modal-content a{
+    position: absolute;
+    color: #fff;
+    font-size: 45px;
+    top: 200px;
+    padding: 5px;
+    cursor: pointer;
+}
+.prev-btn{
+    left: -60px;
+}
+.next-btn{
+    right: -60px;
+}
+
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: solid 2px #22314c;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    bottom: 20px;
+    left: 290px;
+    right: 290px;
+}
+.gal-page{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgb(147, 146, 146);
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    bottom: -18px;
+}
+.dot:hover{
+    background-color: #10c1af;
+    transition: .3s;
+}
+.active-dot{
+    background-color:  #22314c;
+}
+.modal-content button i:hover{
+    color: #fff;
+    transition: .3s;
+}

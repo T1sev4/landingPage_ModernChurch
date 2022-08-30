@@ -1,0 +1,31 @@
+.line{
+    background-image: url(../../images/line-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+.line-inner{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    align-items: center;
+}
+.line-inner p{
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #fff;
+}
+.line-inner i{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 100px;
+}
+.line-inner:hover p{
+    font-size: 50px;
+    transition: .3s;
+}
+.line-inner:hover i{
+    font-size: 120px;
+    transition: .3s;
+}

@@ -1,0 +1,131 @@
+.about{
+    padding: 100px 0;
+}
+.about-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-right{
+    width: 45%;
+    background: url(../../images/about-bg.jpg);
+    background-size: cover;
+    position: relative;
+    height: 400px;
+}
+
+.about-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.about-bg i{
+    color: #fff;
+    font-size: 80px;
+}
+
+
+.about-left{
+    position: relative;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.about-left h2{
+    font-size: 35px;
+    color: #242120;
+    line-height: 1.3;
+    font-weight: 700;
+}
+.about-left p{
+    color: #5f5f5f;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 15px 0px;
+    letter-spacing: 0.2px;
+}
+.about-w{
+
+    margin: 0 0 0 !important;
+    color: #10c1af !important;
+    font-family: 'Kaushan Script', cursive;
+}
+.about-left a{
+    color: #10c1af;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.about-bg:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: .3s;
+}
+.about-bg i:hover{
+    font-size: 100px;
+    transition: .3s;
+}
+.about-wov{
+    cursor: pointer;
+}
+.about-wov i{
+    font-size: 12px;
+}
+.about-wov:hover a{
+    color: black;
+    transition: .3s;
+}
+.about-wov:hover i{
+    color: black;
+    transition: .3s;
+}
+
+/* -------------------------------- */
+
+.modalAbout{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.modalContentAbout{
+    width: 700px;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+}
+.modalContentAbout button{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    font-size: 20px;
+}
+.modalContentAbout button i{
+    color: rgb(147, 146, 146);
+}
+.modalContentAbout iframe{
+    width: 100%;
+    height: 100%;
+}
+.activeAbout{
+    display: flex;
+}
+.modalContentAbout button i:hover{
+    color: #fff;
+    transition: .3s;
+}

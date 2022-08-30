@@ -1,0 +1,31 @@
+.home{
+    height: 600px;
+    background-image: url(../../images/mt-1464-home-bg1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;   
+}
+.home-inner{
+    position: relative;
+    top: 220px;
+    text-align: center;
+}
+.home-inner h1{
+    font-family: 'Kaushan Script', cursive;
+    color: #10c1af;
+    font-size: 20px;
+    
+}
+.home-inner p{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+}
+/* em-акцентированный тег ("emphasis") */
+em{
+    color: #10c1af;
+    font-style: italic;
+    font-weight: 700;
+}
+
+

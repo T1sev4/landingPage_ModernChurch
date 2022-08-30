@@ -1,0 +1,172 @@
+@media(max-width:780px){
+    .head-logo i{
+        display: inline;
+    }
+    .head-menu{
+        display: none;
+    }
+    .Header{
+        padding: 15px 20px;
+    }
+    .home-inner h1{
+        font-size: 16px;
+    }
+    .home-inner p{
+        font-size: 45px;
+    }
+    .study-inner{
+        flex-wrap: wrap;
+    }
+    .study-text{
+        width: 100%;
+    }
+    .study-timer{
+        width: 100%;
+    }
+    .study-button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .about-inner{
+        flex-wrap: wrap;
+    }
+    .about-left{
+        width: 100%;
+    }
+    .about-right{
+        width: 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .left-faith{
+        display: none;
+    }
+    .right-faith{
+        width: 100%;
+    }
+    .solution-block{
+        flex-wrap: wrap;
+    }
+    .solution-item{
+        width: 100%;
+    }
+    .gallery-top{
+        flex-wrap: wrap;
+    }
+    .top-item{
+        width: 100%;
+    }
+    .gallery-bottom{
+        flex-wrap: wrap;
+    }
+    .bottom-item{
+        width: 100%;
+    }
+
+    .pastors-block{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .pastors-item{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .pastors-item a{
+        display: block;
+    }
+    .story-block{
+        flex-wrap: wrap;
+    }
+    .story-item{
+        width: 100%;
+    }
+    .connecting-inner{
+        flex-wrap: wrap;
+    }
+    .connecting-left{
+        width: 100%;
+    }
+    .connecting-right{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .donate-block{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .donate-item{
+        width: 80%;
+    }
+    .active-sermons-item{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    .sermons-left{
+        width: 100%;
+    }
+    .sermons-right{
+        padding: 20px 40px;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .info-inner{
+        flex-wrap: wrap;
+    }
+    .info-text{
+        width: 60%;
+    }
+    .info-lt{
+        width: 30%;
+    }
+    .info-contact{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .cop{
+        margin-top: 80px;
+    }
+    .contact-inner h2{
+        font-size: 40px;
+    }
+    .info-inner{
+        flex-wrap: wrap;
+    }
+    .contact-input{
+        width: 80%;
+    }
+
+    /* ---------------- */
+    /* .modalContentStudy{
+        height: 300px;
+        width: 400px;
+    } */
+
+}
+
+@media(max-width:480px){
+    .navs-btn {
+        font-size: 12px;
+        padding: 20px 20px;
+    }
+
+    .RGS-block p{
+        font-size: 10px;
+    }
+    .info-text{
+        width: 100%;
+    }
+    .info-lt{
+        margin-top: 20px;
+    }
+    .cop{
+        margin-top: 180px;
+    }
+    
+}
